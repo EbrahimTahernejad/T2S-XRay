@@ -14,7 +14,8 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-            name: "T2SXray"
+            name: "T2SXray",
+            dependencies: ["Tun2socks"]
         ),
         .binaryTarget(
             name: "Tun2socks",
