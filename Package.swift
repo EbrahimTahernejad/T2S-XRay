@@ -2,19 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "T2SXray",
+    name: "T2SXRay",
     platforms: [
         .iOS(.v11)
     ],
     products: [
         .library(
-            name: "T2SXray",
-            targets: ["T2SXray", "Tun2socks"])
+            name: "T2SXRay",
+            targets: ["T2SXRay", "Tun2socks"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "T2SXray",
+            name: "T2SXRay",
             dependencies: ["Tun2socks"]
         ),
         .binaryTarget(
