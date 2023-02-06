@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyLibrary",
+    name: "T2SXray",
     platforms: [
         .iOS(.v11)
     ],
