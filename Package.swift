@@ -20,7 +20,7 @@ let package = Package(
         .binaryTarget(
             name: "Tun2socks",
             url: "https://github.com/EbrahimTahernejad/T2SXRay/releases/download/v0.2.1/Tun2socks.xcframework.zip",
-            checksum: "5725003c6f5d279aa0f9736295135b74ce6a107266955902be01173544268586"
+            checksum: "cdfba88559263dbf23327aa57fef7c1237984bc4a6bfb1debef513733cbf25ab"
         )
     ]
 )
