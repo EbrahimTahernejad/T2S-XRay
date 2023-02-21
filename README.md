@@ -81,7 +81,7 @@ extension PacketTunnelProvider: Tun2socksVpnServiceProtocol, Tun2socksLogService
     
     func writeLog(_ s: String?) throws {
         guard let s else { return }
-        Logger.log(s, to: Logger.vpnLogFile)
+        // TODO: Log
     }
     
     func protect(_ fd: Int) -> Bool {
