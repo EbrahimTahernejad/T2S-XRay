@@ -76,7 +76,7 @@ extension PacketTunnelProvider: Tun2socksPacketFlowProtocol {
 ```
 extension PacketTunnelProvider: Tun2socksVpnServiceProtocol, Tun2socksLogServiceProtocol, Tun2socksQuerySpeedProtocol {
     func updateTraffic(_ up: Int64, down: Int64) {
-        
+        // TODO: Send trraffic stats to main app
     }
     
     func writeLog(_ s: String?) throws {
