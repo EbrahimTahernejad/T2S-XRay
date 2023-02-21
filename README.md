@@ -85,7 +85,7 @@ extension PacketTunnelProvider: Tun2socksVpnServiceProtocol, Tun2socksLogService
     }
     
     func protect(_ fd: Int) -> Bool {
-        // Used in android only
+        // For android compatibility, return true
         return true
     }
 }
