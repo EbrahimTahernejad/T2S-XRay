@@ -5,7 +5,7 @@ Add `-lresolv` and `-lbsm` to `OTHER_LDFLAGS` (a.k.a. Other Linker Flags) in pro
 
 
 ## `PacketTunnelProvider` Implementation
-I used two queues as it worked best. One `xrayQueue` and one `packetQueue`.
+I used two `DispatchQueue`s as it worked best. One `xrayQueue` and one `packetQueue`.
 
 
 ```
