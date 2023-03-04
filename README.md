@@ -1,6 +1,9 @@
 # T2SXRay
-## XRay + Tun2socks
 
+## DEPRECATED! 
+this package is deprecated and will not be maintained.
+
+## XRay + Tun2socks
 Add `-lresolv` and `-lbsm` to `OTHER_LDFLAGS` (a.k.a. Other Linker Flags) in project build settings.
 
 
@@ -8,7 +11,7 @@ Add `-lresolv` and `-lbsm` to `OTHER_LDFLAGS` (a.k.a. Other Linker Flags) in pro
 I used two `DispatchQueue`s as it worked best. One `xrayQueue` and one `packetQueue`.
 
 
-```
+```swift
 override func startTunnel(options: [String : NSObject]? = nil, completionHandler: @escaping (Error?) -> Void) {
     .
     .
@@ -46,7 +49,7 @@ override func stopTunnel(with reason: NEProviderStopReason, completionHandler: @
 ```
 
 ## Read and write packets
-```
+```swift
 extension PacketTunnelProvider: Tun2socksPacketFlowProtocol {
     func writePacket(_ packet: Data?) {
         guard let packet else { return }
@@ -73,7 +76,7 @@ extension PacketTunnelProvider: Tun2socksPacketFlowProtocol {
 ```
 
 ## Log and traffic
-```
+```swift
 extension PacketTunnelProvider: Tun2socksVpnServiceProtocol, Tun2socksLogServiceProtocol, Tun2socksQuerySpeedProtocol {
     func updateTraffic(_ up: Int64, down: Int64) {
         // TODO: Send trraffic stats to main app
